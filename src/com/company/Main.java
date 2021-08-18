@@ -1,8 +1,13 @@
 package com.company;
+//Добавить в карту Map<String, Integer> 10 записей.
+//Поменять местами ключи и значения
+// (создается новая карта, ключи становятся значениями,
+// значения становятся ключами).
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+
 
 public class Main {
 
@@ -19,7 +24,7 @@ public class Main {
         map.put("Hungary", 8);
         map.put("Spain", 12);
         System.out.println(map);
-        System.out.println(map.size());
+        System.out.println("Карта, у которой ключи становятся значениями, значения становятся ключами");
         Map<Integer, String> newMap = new HashMap<>();
         for (Entry<String, Integer> entry : map.entrySet()) {
             newMap.put(entry.getValue(), entry.getKey());
